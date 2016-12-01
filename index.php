@@ -69,6 +69,15 @@ $curl_errors = curl_error($ch);
 
 	<script src="js/jquery-2.2.3.min.js" type="text/javascript"></script>
 	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+	<script>
+		<?php if(isset($_POST['name'])) { ?>
+			$(document).ready(function(){
+				jQuery('#connect_register')[0].click();
+			});
+		<?php } ?>
+	</script>
+
 	<script src="js/wow.min.js"></script>
 	<script src="js/custom.js"></script>
 	<script src="js/carouseller.min.js"></script>
@@ -287,13 +296,7 @@ $curl_errors = curl_error($ch);
 						});
 					});
 				</script>
-				<script>
-					<?php if(isset($_POST['name'])) { ?>
-						$(document).ready(function(){
-							$("#connect_register").trigger('click');
-						});
-					<?php } ?>
-				</script>
+
 			</div>
 
 
