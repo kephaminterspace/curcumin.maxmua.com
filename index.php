@@ -49,8 +49,6 @@ $curl_errors = curl_error($ch);
     }
     }
 ?>
-
-
 <html lang="vi">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
@@ -58,6 +56,7 @@ $curl_errors = curl_error($ch);
 	<title>NANO CURCUMIN CHIẾT XUẤT 100% TỪ NGHỆ TỰ NHIÊN</title>
 	<meta content="CURCUMIN, CHIẾT XUẤT 100% TỪ NGHỆ TỰ NHIÊN" name="keywords">
 	<meta content="OIC NANO CURCUMIN là sản phẩm duy nhất của nano curcumin ở dạng chất lỏng, hòa tan 100% trong nước, không tạo cặn: khi các phân tử curcumin được chia tách thành các hạt nano có kích thước siêu nhỏ từ 40-60 nanomet, các hạt nano này luôn có xu hướng gắn kết lại với nhau tạo thành kích thước hạt to hơn, không còn dưới dạng NANO nữa. Chúng tôi đã nghiên cứu và có bằng phát minh sáng chế ra qui trinh điều chế vi nhũ tương nano curcumin" name="description">
+
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -69,14 +68,14 @@ $curl_errors = curl_error($ch);
 
 	<script src="js/jquery-2.2.3.min.js" type="text/javascript"></script>
 	<script src="js/bootstrap.min.js" type="text/javascript"></script>
-
 	<script>
 		<?php if(isset($_POST['name'])) { ?>
-			$(document).ready(function(){
-				jQuery('#connect_register')[0].click();
-			});
+		$(document).ready(function(){
+			jQuery('#connect_register')[0].click();
+		});
 		<?php } ?>
 	</script>
+
 
 	<script src="js/wow.min.js"></script>
 	<script src="js/custom.js"></script>
@@ -296,7 +295,6 @@ $curl_errors = curl_error($ch);
 						});
 					});
 				</script>
-
 			</div>
 
 
@@ -315,13 +313,16 @@ $curl_errors = curl_error($ch);
 					</div>
 				</div>
 			</div>
-			<div class="row" style="padding-bottom:80px;">
-				<div data-wow-delay="1s" class="wow zoomIn quytrinh"><img src="images/quy-trinh.png"> </div>
-				<div data-wow-delay="1s" class="wow zoomIn quytrinh1"><img src="images/qt1.png"> </div>
-				<div data-wow-delay="1s" class="wow zoomIn quytrinh2"><img src="images/qt2.png"> </div>
-				<div data-wow-delay="1s" class="wow zoomIn quytrinh3"><img src="images/qt3.png"> </div>
-				<div data-wow-delay="1s" class="wow zoomIn quytrinh4"><img src="images/qt4.png"> </div>
-				<div data-wow-delay="1s" class="wow zoomIn quytrinh5"><img src="images/qt5.png"> </div>
+			<div class="row">
+				<div id="quytrinh">
+					<div data-wow-delay="1s" class="wow zoomIn quytrinh"><img src="images/quy-trinh.png"> </div>
+					<div data-wow-delay="1s" class="wow zoomIn quytrinh1"><img src="images/qt1.png"> </div>
+					<div data-wow-delay="1s" class="wow zoomIn quytrinh2"><img src="images/qt2.png"> </div>
+					<div data-wow-delay="1s" class="wow zoomIn quytrinh3"><img src="images/qt3.png"> </div>
+					<div data-wow-delay="1s" class="wow zoomIn quytrinh4"><img src="images/qt4.png"> </div>
+					<div data-wow-delay="1s" class="wow zoomIn quytrinh5"><img src="images/qt5.png"> </div>
+				</div>
+				<div id="qtmobile"><img src="images/quytrinh.png"></div>
 			</div>
 		</div>
 	</section>
@@ -359,19 +360,20 @@ $curl_errors = curl_error($ch);
 			<div class="row c2 text-white" style="width:69%; margin:auto; text-align:center">
 				<h4 class="f-w-900 m-b-md" data-selector="text3" style="color:#ffffff;font-size:20px;margin-bottom:10px; text-transform:none; font-weight:normal;">Hãy để lại thông tin bên dưới chúng tôi sẽ sớm
 					liên hệ lại tư vấn cho bạn:</h4>
+
 				<form class="horizontal form-white" id="contactform" method="post" action="index.php">
 					<?php if(isset($message)){ ?>
 						<p style="color: red; "> <?php echo $message; ?></p>
 					<?php } ?>
 
 					<div class="form-group">
-						<input id="name" class="form-control" style="border-radius:8px;" name="name" value="<?php if(isset($_POST['name'])) { echo $_POST['name']; } ?>" type="text" required placeholder="Họ và tên *:" required oninvalid="setCustomValidity('Họ và tên không để trống')" oninput="setCustomValidity('')">
+						<input id="name" class="form-control" name="name" value="<?php if(isset($_POST['name'])) { echo $_POST['name']; } ?>" type="text" required placeholder="Họ và tên *:" required oninvalid="setCustomValidity('Họ và tên không để trống')" oninput="setCustomValidity('')">
 					</div>
 					<div class="form-group">
-						<input id="email" class="form-control" style="border-radius:8px;" name="email" value="<?php if(isset($_POST['email'])) { echo $_POST['email']; } ?>" type="text" required placeholder="Địa chỉ email *:" required pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" oninvalid="setCustomValidity('Địa chỉ email không chính xác!')" oninput="setCustomValidity('')">
+						<input id="email" class="form-control" name="email" value="<?php if(isset($_POST['email'])) { echo $_POST['email']; } ?>" type="text" required placeholder="Địa chỉ email *:" required pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" oninvalid="setCustomValidity('Địa chỉ email không chính xác!')" oninput="setCustomValidity('')">
 					</div>
 					<div class="form-group">
-						<input id="phone" class="form-control" style="border-radius:8px;" name="phone" value="<?php if(isset($_POST['phone'])) { echo $_POST['phone']; } ?>" type="text" required placeholder="Số điện thoại *:" required pattern="^[0-9]{10,12}$" oninvalid="setCustomValidity('Số điện thoại không đúng')" oninput="setCustomValidity('')">
+						<input id="phone" class="form-control"name="phone" value="<?php if(isset($_POST['phone'])) { echo $_POST['phone']; } ?>" type="text" required placeholder="Số điện thoại *:" required pattern="^[0-9]{10,12}$" oninvalid="setCustomValidity('Số điện thoại không đúng')" oninput="setCustomValidity('')">
 					</div>
 					<div class="form-group m-b-0">
 						<button type="submit" class="btn btn-green wow pulse" data-wow-iteration="2" data-selector="btn" style="font-weight:700;color:#ffffff; background-color:#f99e1a;border-width:0px;border-style:solid;padding:20px;font-size:16px; width:33%;">NHẬN TƯ VẤN NGAY</button>
@@ -405,7 +407,8 @@ $curl_errors = curl_error($ch);
 		</div>
 	</section>
 </div>
-
-
 </body>
 </html>
+
+
+
