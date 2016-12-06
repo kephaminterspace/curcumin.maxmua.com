@@ -19,28 +19,26 @@
 .flexslider {
   margin: 0;
   padding: 0;
-  padding-top:60px;
 }
 .flexslider .slides > li {
   display: none;
   -webkit-backface-visibility: hidden;
+  text-align:center;
+
 }
 .flexslider .slides img {
   width: 90px;
   height:90px !important;
   border-radius:90px;
   display: block;
-  float:left;
+  margin:auto;
 }
-.flexslider .slides .info {
-  float:left;
-  padding-left:10px;
-  padding-top:25px;
-  font-size:18px;
-  color:#fff;
+.flexslider .slides p {
+ 	padding:5px 20px; color:#fff;
+	
 }
 .flexslider .slides .info span{
-	font-weight:bold;
+	font-weight:bold;color:#fff;
 	 }
 .flexslider .slides:after {
   content: "\0020";

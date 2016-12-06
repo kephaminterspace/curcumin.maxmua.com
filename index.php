@@ -1,61 +1,58 @@
-<!---->
 <?php
 $message = '';
 $t=time();
 if(isset($_POST['name'])) {
-$arr = array(
-    'properties' => array(
-        array(
-            'property' => 'email',
-            'value' => $_POST['email']
-        ),
-        array(
-            'property' => 'firstname',
-            'value' => $_POST['name']
-        ),
-        array(
-            'property' => 'lastname',
-            'value' => ''
-        ),
-        array(
-            'property' => 'phone',
-            'value' => $_POST['phone']
-        ),
-        array(
-            'property' => 'hs_lead_status',
-            'value' => "NEW"
-        )
-    )
-);
+	$arr = array(
+		'properties' => array(
+			array(
+				'property' => 'email',
+				'value' => $_POST['email']
+			),
+			array(
+				'property' => 'firstname',
+				'value' => $_POST['name']
+			),
+			array(
+				'property' => 'lastname',
+				'value' => ''
+			),
+			array(
+				'property' => 'phone',
+				'value' => $_POST['phone']
+			),
+			array(
+				'property' => 'hs_lead_status',
+				'value' => "NEW"
+			)
+		)
+	);
 
-$post_json = json_encode($arr);
+	$post_json = json_encode($arr);
 
-$endpoint = "https://api.hubapi.com/contacts/v1/contact/?hapikey=37f58bae-b91f-4130-b13a-eb8044cbcb10";
-$ch = @curl_init();
-@curl_setopt($ch, CURLOPT_POST, true);
-@curl_setopt($ch, CURLOPT_POSTFIELDS, $post_json);
-@curl_setopt($ch, CURLOPT_URL, $endpoint);
-@curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
-@curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-$response = @curl_exec($ch);
-$status_code = @curl_getinfo($ch, CURLINFO_HTTP_CODE);
-$curl_errors = curl_error($ch);
-@curl_close($ch);
-    if ($status_code == 200) {
-        header('Location: thank.php');
-        die();
-    }else{
-        $message = 'Email đã tồn tại';
-    }
-    }
+	$endpoint = "https://api.hubapi.com/contacts/v1/contact/?hapikey=37f58bae-b91f-4130-b13a-eb8044cbcb10";
+	$ch = @curl_init();
+	@curl_setopt($ch, CURLOPT_POST, true);
+	@curl_setopt($ch, CURLOPT_POSTFIELDS, $post_json);
+	@curl_setopt($ch, CURLOPT_URL, $endpoint);
+	@curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+	@curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+	$response = @curl_exec($ch);
+	$status_code = @curl_getinfo($ch, CURLINFO_HTTP_CODE);
+	$curl_errors = curl_error($ch);
+	@curl_close($ch);
+	if ($status_code == 200) {
+		header('Location: thank.php');
+		die();
+	}else{
+		$message = 'Email đã tồn tại';
+	}
+}
 ?>
+
 <html lang="vi">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-	<title>NANO CURCUMIN CHIẾT XUẤT 100% TỪ NGHỆ TỰ NHIÊN</title>
-	<meta content="CURCUMIN, CHIẾT XUẤT 100% TỪ NGHỆ TỰ NHIÊN" name="keywords">
-	<meta content="OIC NANO CURCUMIN là sản phẩm duy nhất của nano curcumin ở dạng chất lỏng, hòa tan 100% trong nước, không tạo cặn: khi các phân tử curcumin được chia tách thành các hạt nano có kích thước siêu nhỏ từ 40-60 nanomet, các hạt nano này luôn có xu hướng gắn kết lại với nhau tạo thành kích thước hạt to hơn, không còn dưới dạng NANO nữa. Chúng tôi đã nghiên cứu và có bằng phát minh sáng chế ra qui trinh điều chế vi nhũ tương nano curcumin" name="description">
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/animate.css">
@@ -75,8 +72,6 @@ $curl_errors = curl_error($ch);
 		});
 		<?php } ?>
 	</script>
-
-
 	<script src="js/wow.min.js"></script>
 	<script src="js/custom.js"></script>
 	<script src="js/carouseller.min.js"></script>
@@ -104,7 +99,7 @@ $curl_errors = curl_error($ch);
 						<li class="active"><a href="#content6-1-c" class="smooth-scroll">Giới thiệu</a></li>
 						<li><a href="#contact7-1" class="smooth-scroll">Công dụng</a></li>
 						<li><a href="#portfolio1-1-a" class="smooth-scroll">Tại Sao Chọn?</a></li>
-						<li><a href="#cta1-3" class="smooth-scroll">Thành phần</a></li>
+						<li><a href="#cta1-3" class="smooth-scroll">Khách hàng</a></li>
 						<li><a href="#testimonials3-1" class="smooth-scroll" >Quy trình</a></li>
 						<li><a href="#contact3-2" class="smooth-scroll" id="connect_register">Liên hệ</a></li>
 
@@ -116,12 +111,13 @@ $curl_errors = curl_error($ch);
 </div>
 
 <div class="getleads">
-	<section id="hero1-1-a" class="hero bg-img" style="background: url('images/bg.png') no-repeat bottom center;">
+	<section id="hero1-1-a" class="hero bg-img" style="background: url('images/bg.jpg') no-repeat center;">
 		<div class="container vertical-center-rel">
 			<div class="row">
 				<div style="text-align:center;">
-					<h1 style="color:#003300; font-size:60px; padding-bottom:0; margin:0;text-transform:uppercase">NANO CURCUMIN</h1>
-					<p style="color:#003300; font-size:23px; margin:0; padding:0;text-transform:uppercase">chiết xuất dạng lỏng, 100% từ nghệ tự nhiên việt nam</p>
+					<h1 style="color:#003300; font-size:60px; padding-bottom:0; margin:0;text-transform:uppercase">OIC NANO CURCUMIN</h1>
+					<p style="color:#003300; font-size:23px; margin:0; padding:0;text-transform:uppercase">Hỗ trợ phòng chống ung thư, bảo vệ sức khỏe</p>
+					<p style="color:#df0d3f; font-size:36px; font-weight:bold; margin:0; padding:0;text-transform:uppercase">hotline: 0966.336.663</p>
 				</div>
 			</div>
 		</div>
@@ -186,7 +182,7 @@ $curl_errors = curl_error($ch);
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
 					<div class="section-header text-center wow fadeIn" style="visibility: visible; animation: fadeIn; -webkit-animation: fadeIn;">
-						<h2 data-selector="text1" style=" color:#ff9700; text-transform:uppercase; font-size:28px;">tại sao chọn OIC NANO CURCUMIN?</h2>
+						<h2 data-selector="text1" style=" color:#ff9700; text-transform:uppercase; font-size:28px; padding-bottom:50px;">tại sao chọn OIC NANO CURCUMIN?</h2>
 					</div>
 				</div>
 			</div>
@@ -217,18 +213,14 @@ $curl_errors = curl_error($ch);
 <div class="getleads">
 	<section id="cta1-3" class="p-y-md bg-edit" data-selector="block" style="background: url('images/bghome.png') top center; padding-top:120px;padding-bottom:10px;">
 		<div class="container">
-			<div class="row" style="width:60%; margin:auto; ">
-				<div data-wow-delay="0.5s" class="wow swing">
-					<p style="font-size:1em; color:#fff; text-align:center ">“ Sau 1 thời gian sử dụng Nano Curcumin, tôi cảm thấy hiệu quả rõ rệt, rất dễ uống thoải mái khi ăn uống vì căn bệnh dạ dày đã thuyên giảm đi nhiều ”
-					</p>
-				</div>
-			</div>
 			<div class="row">
 				<section class="slider">
 					<div class="flexslider carousel">
-						<ul class="slides">
+						<ul class="slides" style="margin:auto;">
 							<li>
 								<img src="http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg" />
+								<p>Sau 1 thời gian sử dụng Nano Curcumin, tôi cảm thấy hiệu quả rõ rệt, rất dễ uống thoải mái khi ăn uống vì căn bệnh dạ dày đã thuyên
+								</p>
 								<div class="info">
 									<span>Nguyễn Văn A</span>
 									<p>Nhân viên văn phòng</p>
@@ -236,6 +228,8 @@ $curl_errors = curl_error($ch);
 							</li>
 							<li>
 								<img src="http://flexslider.woothemes.com/images/kitchen_adventurer_lemon.jpg" />
+								<p>Sau 1 thời gian sử dụng Nano Curcumin, tôi cảm thấy hiệu quả rõ rệt, rất dễ uống thoải mái khi ăn uống vì căn bệnh dạ dày đã thuyên
+								</p>
 								<div class="info">
 									<span>Nguyễn Văn B</span>
 									<p>Nhân viên văn phòng</p>
@@ -243,6 +237,8 @@ $curl_errors = curl_error($ch);
 							</li>
 							<li>
 								<img src="http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg" />
+								<p>Sau 1 thời gian sử dụng Nano Curcumin, tôi cảm thấy hiệu quả rõ rệt, rất dễ uống thoải mái khi ăn uống vì căn bệnh dạ dày đã thuyên
+								</p>
 								<div class="info">
 									<span>Nguyễn Văn C</span>
 									<p>Nhân viên văn phòng</p>
@@ -250,6 +246,8 @@ $curl_errors = curl_error($ch);
 							</li>
 							<li>
 								<img src="http://flexslider.woothemes.com/images/kitchen_adventurer_lemon.jpg" />
+								<p>Sau 1 thời gian sử dụng Nano Curcumin, tôi cảm thấy hiệu quả rõ rệt, rất dễ uống thoải mái khi ăn uống vì căn bệnh dạ dày đã thuyên
+								</p>
 								<div class="info">
 									<span>Nguyễn Văn D</span>
 									<p>Nhân viên văn phòng</p>
@@ -257,6 +255,8 @@ $curl_errors = curl_error($ch);
 							</li>
 							<li>
 								<img src="http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg" />
+								<p>Sau 1 thời gian sử dụng Nano Curcumin, tôi cảm thấy hiệu quả rõ rệt, rất dễ uống thoải mái khi ăn uống vì căn bệnh dạ dày đã thuyên
+								</p>
 								<div class="info">
 									<span>Nguyễn Văn E</span>
 									<p>Nhân viên văn phòng</p>
@@ -264,6 +264,8 @@ $curl_errors = curl_error($ch);
 							</li>
 							<li>
 								<img src="http://flexslider.woothemes.com/images/kitchen_adventurer_lemon.jpg" />
+								<p>Sau 1 thời gian sử dụng Nano Curcumin, tôi cảm thấy hiệu quả rõ rệt, rất dễ uống thoải mái khi ăn uống vì căn bệnh dạ dày đã thuyên
+								</p>
 								<div class="info">
 									<span>Nguyễn Văn F</span>
 									<p>Nhân viên văn phòng</p>
@@ -315,12 +317,35 @@ $curl_errors = curl_error($ch);
 			</div>
 			<div class="row">
 				<div id="quytrinh">
-					<div data-wow-delay="1s" class="wow zoomIn quytrinh"><img src="images/quy-trinh.png"> </div>
-					<div data-wow-delay="1s" class="wow zoomIn quytrinh1"><img src="images/qt1.png"> </div>
-					<div data-wow-delay="1s" class="wow zoomIn quytrinh2"><img src="images/qt2.png"> </div>
-					<div data-wow-delay="1s" class="wow zoomIn quytrinh3"><img src="images/qt3.png"> </div>
-					<div data-wow-delay="1s" class="wow zoomIn quytrinh4"><img src="images/qt4.png"> </div>
-					<div data-wow-delay="1s" class="wow zoomIn quytrinh5"><img src="images/qt5.png"> </div>
+					<div data-wow-delay="1s" class="wow zoomIn quytrinh"><img src="images/nghe-tuoi.png"> </div>
+					<div data-wow-delay="1.2s" class="wow zoomIn quytrinhx"><img src="images/quy-trinh1.png"> </div>
+					<div data-wow-delay="1.5s" class="wow zoomIn quytrinh1"><img src="images/nut1.png"> </div>
+					<div data-wow-delay="1.7s" class="wow zoomIn qttext1">
+						<p>NGHỆ TƯƠI</p>
+						<p>Chúng tôi đã và đang nỗ lực hết mình mang đến cho khách hàng những sản phẩm</p>
+					</div>
+					<div data-wow-delay="2s" class="wow zoomIn quytrinh2"><img src="images/nut234.png"> </div>
+					<div data-wow-delay="2.2s" class="wow bounceInRight qttext2">
+						<p>BỘT NGHỆ</p>
+						<p>Chúng tôi đã và đang nỗ lực hết mình mang đến cho khách hàng những sản phẩm</p>
+					</div>
+					<div data-wow-delay="2.5s" class="wow zoomIn quytrinh3"><img src="images/nut234.png"> </div>
+					<div data-wow-delay="2.7s" class="wow bounceInLeft qttext3">
+						<p>TINH BỘT NGHỆ</p>
+						<p>Chúng tôi đã và đang nỗ lực hết mình mang đến cho khách hàng những sản phẩm</p>
+					</div>
+					<div data-wow-delay="3s" class="wow zoomIn quytrinh4"><img src="images/nut234.png"> </div>
+					<div data-wow-delay="3.2s" class="wow bounceInLeft qttext4">
+						<p>CURCUMIN</p>
+						<p>Chúng tôi đã và đang nỗ lực hết mình mang đến cho khách hàng những sản phẩm</p>
+					</div>
+					<div data-wow-delay="3.5s" class="wow bounceInUp quytrinh6"><img src="images/nanocurcumin.png"> </div>
+					<div data-wow-delay="4s" class="wow zoomIn quytrinh5"><img src="images/nut5.png"> </div>
+					<div data-wow-delay="4.2s" class="wow fadeInRight qttext5">
+						<p>NANO CURCUMIN</p>
+						<p>Chúng tôi đã và đang nỗ lực hết mình mang đến cho khách hàng những sản phẩm</p>
+					</div>
+
 				</div>
 				<div id="qtmobile"><img src="images/quytrinh.png"></div>
 			</div>
@@ -407,8 +432,7 @@ $curl_errors = curl_error($ch);
 		</div>
 	</section>
 </div>
+
+
 </body>
 </html>
-
-
-
