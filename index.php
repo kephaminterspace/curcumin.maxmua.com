@@ -111,7 +111,8 @@ if(isset($_POST['name'])) {
 				<div style="text-align:center;">
 					<h1 style="color:#003300; font-size:60px; padding-bottom:0; margin:0;text-transform:uppercase">OIC NANO CURCUMIN</h1>
 					<p style="color:#003300; font-size:23px; margin:0; padding:0;text-transform:uppercase">Hỗ trợ phòng chống ung thư, bảo vệ sức khỏe</p>
-					<p style="color:#df0d3f; font-size:36px; font-weight:bold; margin:0; padding:0;text-transform:uppercase">hotline: 0966.336.663</p>
+					<h1 style=" color:#F00; font-size:40px; padding-bottom:0; margin:0;text-transform:uppercase">chỉ với 900,000 VND cho 50ml curcumin</h1>
+					<p style="color: #333; font-size:36px; font-weight:bold; margin:0; padding:0;text-transform:uppercase">hotline: 01666.555.888</p>
 				</div>
 			</div>
 		</div>
@@ -149,17 +150,17 @@ if(isset($_POST['name'])) {
 						<div data-selector="text2" style="font-weight:400;color:#333333;font-size:13px;"><p>Bảo vệ và giúp làm lành tổn thương niên mạc dạ dày, giúp các vết thương nhanh liền sẹo và làm mờ các vết thâm nám</p></div>
 					</div>
 					<div class="col-md-3">
-						<img src="images/ss1.jpg" alt="None" class="congdung">
+						<img src="images/ss2.jpg" alt="None" class="congdung">
 						<h5 class="f-w-900" data-selector="text1" style="font-weight:700;color:#333333;font-size:15px; text-transform:uppercase">Tiêu diệt các tế bào lạ</h5>
 						<div data-selector="text2" style="font-weight:400;color:#333333;font-size:13px;"><p>giúp hỗ trợ quá trinh điều trị bệnh nhận ung thư, bệnh nhân đang xạ trị</p></div>
 					</div>
 					<div class="col-md-3">
-						<img src="images/ss1.jpg" alt="None" class="congdung">
+						<img src="images/ss3.jpg" alt="None" class="congdung">
 						<h5 class="f-w-900" data-selector="text1" style="font-weight:700;color:#333333;font-size:15px; text-transform:uppercase">phục hồi sức khỏe</h5>
 						<div data-selector="text2" style="font-weight:400;color:#333333;font-size:13px;"><p>Phụ nữ sau sinh, chống lão hóa cơ thể, giúp cơ thể trẻ khỏe hơn, da đẹp hơn</p></div>
 					</div>
 					<div class="col-md-3">
-						<img src="images/ss1.jpg" alt="None" class="congdung">
+						<img src="images/ss4.jpg" alt="None" class="congdung">
 						<h5 class="f-w-900" data-selector="text1" style="font-weight:700;color:#333333;font-size:15px; text-transform:uppercase">Tăng cường chức năng gan
 						</h5>
 						<div data-selector="text2" style="font-weight:400;color:#333333;font-size:13px;"><p>Hạ men gan, tăng cường khả năng miễn dịch, tăng cường chức năng gan mật</p></div>
@@ -213,57 +214,57 @@ if(isset($_POST['name'])) {
 					<div class="flexslider carousel">
 						<ul class="slides" style="margin:auto;">
 							<li>
-								<img src="http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg" />
+								<img src="http://dongphuchocsinh.org/data/dongphucnganhang/Image/dong%20phuc%20nam%203.jpg" />
 								<p>Sau 1 thời gian sử dụng Nano Curcumin, tôi cảm thấy hiệu quả rõ rệt, rất dễ uống thoải mái khi ăn uống vì căn bệnh dạ dày đã thuyên
 								</p>
 								<div class="info">
-									<span>Nguyễn Văn Tuấn</span>
+									<span>Nguyễn Tiến Thành</span>
 									<p>Nhân viên văn phòng</p>
 								</div>
 							</li>
 							<li>
-								<img src="http://flexslider.woothemes.com/images/kitchen_adventurer_lemon.jpg" />
+								<img src="http://img2.news.zing.vn/2013/07/15/ngan2.jpg" />
 								<p>Sau 1 thời gian sử dụng Nano Curcumin, tôi cảm thấy hiệu quả rõ rệt, rất dễ uống thoải mái khi ăn uống vì căn bệnh dạ dày đã thuyên
 								</p>
 								<div class="info">
-									<span>Pham trung Kiên</span>
+									<span>Nguyễn Hà Ngân</span>
 									<p>Nhân viên văn phòng</p>
 								</div>
 							</li>
 							<li>
-								<img src="http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg" />
+								<img src="http://img2.news.zing.vn/2012/11/12/nguyen-hoa-binh1.jpg" />
 								<p>Sau 1 thời gian sử dụng Nano Curcumin, tôi cảm thấy hiệu quả rõ rệt, rất dễ uống thoải mái khi ăn uống vì căn bệnh dạ dày đã thuyên
 								</p>
 								<div class="info">
-									<span>Lê văn Khánh</span>
+									<span>Lưu Quang Đại</span>
 									<p>Nhân viên văn phòng</p>
 								</div>
 							</li>
 							<li>
-								<img src="http://flexslider.woothemes.com/images/kitchen_adventurer_lemon.jpg" />
+								<img src="https://4.bp.blogspot.com/-U9Z2Ih6NFJs/VuglnWaLAsI/AAAAAAAAAOQ/TQdTST7GYDsy32bgwD4PAfSjtHQT6Idnw/s640/Hong-Nam-hot-boy-cau-long-3-4237-1398529648.jpg" />
 								<p>Sau 1 thời gian sử dụng Nano Curcumin, tôi cảm thấy hiệu quả rõ rệt, rất dễ uống thoải mái khi ăn uống vì căn bệnh dạ dày đã thuyên
 								</p>
 								<div class="info">
-									<span>Lưu thị Chi</span>
-									<p>Nhân viên văn phòng</p>
+									<span>Trần Duy Khánh</span>
+									<p>CEO</p>
 								</div>
 							</li>
 							<li>
-								<img src="http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg" />
+								<img src="http://a9.vietbao.vn/images/vn965/cong-nghe/67477975-vnm_2014_7328264.jpg" />
 								<p>Sau 1 thời gian sử dụng Nano Curcumin, tôi cảm thấy hiệu quả rõ rệt, rất dễ uống thoải mái khi ăn uống vì căn bệnh dạ dày đã thuyên
 								</p>
 								<div class="info">
-									<span>Trần văn Xang</span>
-									<p>Nhân viên văn phòng</p>
+									<span>Trần Thái Tuấn</span>
+									<p>Nhân viên Sale</p>
 								</div>
 							</li>
 							<li>
-								<img src="http://flexslider.woothemes.com/images/kitchen_adventurer_lemon.jpg" />
+								<img src="http://a4vn.com/media/wysiwyg/A-THOITRANG-2014/THANG-09/TTBAS-142612/1.jpg" />
 								<p>Sau 1 thời gian sử dụng Nano Curcumin, tôi cảm thấy hiệu quả rõ rệt, rất dễ uống thoải mái khi ăn uống vì căn bệnh dạ dày đã thuyên
 								</p>
 								<div class="info">
-									<span>Nguyễn Văn Cảnh</span>
-									<p>Nhân viên văn phòng</p>
+									<span>Vũ Hải Nam</span>
+									<p>Kinh doanh tự do</p>
 								</div>
 							</li>
 						</ul>
@@ -356,11 +357,11 @@ if(isset($_POST['name'])) {
 				<p style="color:#f99e1a; font-size:20px; padding-top:15px;">Thiết bị đạt chuẩn GMP, nhập khẩu từ G7, Nga hoặc Israel</p>
 			</div>
 			<div class="col-md-4">
-				<img src="images/s1.jpg">
+				<img src="images/s2.jpg">
 				<p style="color:#f99e1a; font-size:20px; padding-top:15px;">Dược liệu đạt chuẩn USP hoặc EP</p>
 			</div>
 			<div class="col-md-4">
-				<img src="images/s1.jpg">
+				<img src="images/s3.jpg">
 				<p style="color:#f99e1a; font-size:20px; padding-top:15px;">Nguyên liệu từ Curcuminoid nguồn gốc Nghệ vàng của Việt nam đạt 3 pic</p>
 			</div>
 		</div>
@@ -408,12 +409,10 @@ if(isset($_POST['name'])) {
 				</div>
 				<div class="col-md-4">
 					<p style="padding-top:20px;color:#fff;"><b>Liên hệ:</b></p>
-					<p style="color:#fff; font-size:13px;margin:0;"> Tel: +84437332122</p>
-					<p style="color:#fff; font-size:13px;margin:0;">Fax:+84437338787</p>
-					<p style="color:#fff; font-size:13px;margin:0;">Tax code : 0104128935</p>
-					<p style="color:#fff; font-size:13px;margin:0;">Add :14 11A Plot Trung hoa Str - Cau giay - Hanoi</p>
-					<p style="color:#fff; font-size:13px;margin:0;">Branch:Villa no 9 BT2 - Linhdam peninsula</p>
-					<p style="color:#fff; font-size:13px;margin:0;">Hoangmai - Hanoi - Vietnam</p>
+					<p style="color:#fff; font-size:13px;margin:0;"> <strong>Công ty cổ phần giao nhận ISO</strong></p>
+					<p style="color:#fff; font-size:13px;margin:0;">Tel: 01666.555.888</p>
+					<p style="color:#fff; font-size:13px;margin:0;">Địa chỉ: P1801 khu A tòa nhà M3M4 số 91 Nguyễn Chí Thanh, Hà Nội</p>
+					<p style="color:#fff; font-size:13px;margin:0;">&nbsp;</p>
 				</div>
 				<div class="col-md-4">
 					<p style="padding-top:20px; padding-bottom:8px;color:#fff;"><b>Find us:</b></p>
@@ -430,4 +429,3 @@ if(isset($_POST['name'])) {
 
 </body>
 </html>
-
