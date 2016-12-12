@@ -49,6 +49,7 @@ if(isset($_POST['name'])) {
 }
 ?>
 
+
 <html lang="vi">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
@@ -65,13 +66,6 @@ if(isset($_POST['name'])) {
 
 	<script src="js/jquery-2.2.3.min.js" type="text/javascript"></script>
 	<script src="js/bootstrap.min.js" type="text/javascript"></script>
-	<script>
-		<?php if(isset($_POST['name'])) { ?>
-		$(document).ready(function(){
-			jQuery('#connect_register')[0].click();
-		});
-		<?php } ?>
-	</script>
 	<script src="js/wow.min.js"></script>
 	<script src="js/custom.js"></script>
 	<script src="js/carouseller.min.js"></script>
@@ -101,7 +95,7 @@ if(isset($_POST['name'])) {
 						<li><a href="#portfolio1-1-a" class="smooth-scroll">Tại Sao Chọn?</a></li>
 						<li><a href="#cta1-3" class="smooth-scroll">Khách hàng</a></li>
 						<li><a href="#testimonials3-1" class="smooth-scroll" >Quy trình</a></li>
-						<li><a href="#contact3-2" class="smooth-scroll" id="connect_register">Liên hệ</a></li>
+						<li><a href="#contact3-2" class="smooth-scroll">Liên hệ</a></li>
 
 					</ul>
 				</div>
@@ -211,9 +205,10 @@ if(isset($_POST['name'])) {
 	</section>
 </div>
 <div class="getleads">
-	<section id="cta1-3" class="p-y-md bg-edit" data-selector="block" style="background: url('images/bghome.png') top center; padding-top:120px;padding-bottom:10px;">
+	<section id="cta1-3" class="p-y-md bg-edit" data-selector="block" style="background: url('images/bghome.png') top center; padding-top:80px;padding-bottom:10px;">
 		<div class="container">
 			<div class="row">
+				<p style=" font-size:18px; padding:5px; font-weight:bold; color:#fff; text-align:center; text-transform:uppercase">khách hàng nói về sản phẩm sau khi sử dụng sản phẩm</p>
 				<section class="slider">
 					<div class="flexslider carousel">
 						<ul class="slides" style="margin:auto;">
@@ -222,7 +217,7 @@ if(isset($_POST['name'])) {
 								<p>Sau 1 thời gian sử dụng Nano Curcumin, tôi cảm thấy hiệu quả rõ rệt, rất dễ uống thoải mái khi ăn uống vì căn bệnh dạ dày đã thuyên
 								</p>
 								<div class="info">
-									<span>Nguyễn Văn A</span>
+									<span>Nguyễn Văn Tuấn</span>
 									<p>Nhân viên văn phòng</p>
 								</div>
 							</li>
@@ -231,7 +226,7 @@ if(isset($_POST['name'])) {
 								<p>Sau 1 thời gian sử dụng Nano Curcumin, tôi cảm thấy hiệu quả rõ rệt, rất dễ uống thoải mái khi ăn uống vì căn bệnh dạ dày đã thuyên
 								</p>
 								<div class="info">
-									<span>Nguyễn Văn B</span>
+									<span>Pham trung Kiên</span>
 									<p>Nhân viên văn phòng</p>
 								</div>
 							</li>
@@ -240,7 +235,7 @@ if(isset($_POST['name'])) {
 								<p>Sau 1 thời gian sử dụng Nano Curcumin, tôi cảm thấy hiệu quả rõ rệt, rất dễ uống thoải mái khi ăn uống vì căn bệnh dạ dày đã thuyên
 								</p>
 								<div class="info">
-									<span>Nguyễn Văn C</span>
+									<span>Lê văn Khánh</span>
 									<p>Nhân viên văn phòng</p>
 								</div>
 							</li>
@@ -249,7 +244,7 @@ if(isset($_POST['name'])) {
 								<p>Sau 1 thời gian sử dụng Nano Curcumin, tôi cảm thấy hiệu quả rõ rệt, rất dễ uống thoải mái khi ăn uống vì căn bệnh dạ dày đã thuyên
 								</p>
 								<div class="info">
-									<span>Nguyễn Văn D</span>
+									<span>Lưu thị Chi</span>
 									<p>Nhân viên văn phòng</p>
 								</div>
 							</li>
@@ -258,7 +253,7 @@ if(isset($_POST['name'])) {
 								<p>Sau 1 thời gian sử dụng Nano Curcumin, tôi cảm thấy hiệu quả rõ rệt, rất dễ uống thoải mái khi ăn uống vì căn bệnh dạ dày đã thuyên
 								</p>
 								<div class="info">
-									<span>Nguyễn Văn E</span>
+									<span>Trần văn Xang</span>
 									<p>Nhân viên văn phòng</p>
 								</div>
 							</li>
@@ -267,7 +262,7 @@ if(isset($_POST['name'])) {
 								<p>Sau 1 thời gian sử dụng Nano Curcumin, tôi cảm thấy hiệu quả rõ rệt, rất dễ uống thoải mái khi ăn uống vì căn bệnh dạ dày đã thuyên
 								</p>
 								<div class="info">
-									<span>Nguyễn Văn F</span>
+									<span>Nguyễn Văn Cảnh</span>
 									<p>Nhân viên văn phòng</p>
 								</div>
 							</li>
@@ -385,8 +380,7 @@ if(isset($_POST['name'])) {
 			<div class="row c2 text-white" style="width:69%; margin:auto; text-align:center">
 				<h4 class="f-w-900 m-b-md" data-selector="text3" style="color:#ffffff;font-size:20px;margin-bottom:10px; text-transform:none; font-weight:normal;">Hãy để lại thông tin bên dưới chúng tôi sẽ sớm
 					liên hệ lại tư vấn cho bạn:</h4>
-
-				<form class="horizontal form-white" id="contactform" method="post" action="index.php">
+				<form class="horizontal form-white" id="contactform" method="post" action="index.php#contact3-2">
 					<?php if(isset($message)){ ?>
 						<p style="color: red; "> <?php echo $message; ?></p>
 					<?php } ?>
@@ -436,3 +430,4 @@ if(isset($_POST['name'])) {
 
 </body>
 </html>
+
