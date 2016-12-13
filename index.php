@@ -396,7 +396,7 @@ if(isset($_POST['name'])) {
 						<input id="phone" class="form-control"name="phone" value="<?php if(isset($_POST['phone'])) { echo $_POST['phone']; } ?>" type="text" required placeholder="Số điện thoại *:" required pattern="^[0-9]{10,12}$" oninvalid="setCustomValidity('Số điện thoại không đúng')" oninput="setCustomValidity('')">
 					</div>
 					<div class="form-group m-b-0">
-						<button type="submit" class="btn btn-green wow pulse" data-wow-iteration="2" data-selector="btn" style="font-weight:700;color:#ffffff; background-color:#f99e1a;border-width:0px;border-style:solid;padding:20px;font-size:16px; width:33%;">NHẬN TƯ VẤN NGAY</button>
+						<button type="submit" class="btn btn-green wow pulse" data-wow-iteration="2" data-selector="btn" style="font-weight: 700; color: rgb(255, 255, 255); background-color: rgb(249, 158, 26); border-width: 0px; border-style: solid; padding: 20px; font-size: 16px; max-width: 400px; visibility: visible; animation-iteration-count: 2; animation-name: pulse;">NHẬN TƯ VẤN NGAY</button>
 					</div>
 				</form>
 
