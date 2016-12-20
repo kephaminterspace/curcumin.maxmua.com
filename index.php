@@ -367,6 +367,20 @@ if(isset($_POST['name'])) {
 		</div>
 	</div>
 </div>
+
+
+<footer id="footer">
+
+	<div class="btn-group dropup btn-call-us">
+		<button type="button" class="btn btn-default dropdown-toggle call-us" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Call us now !!!</button>
+
+		<ul class="dropdown-menu list-phone">
+			<!-- Dropdown menu links -->
+			<li><a href="tel:01666555888"><strong>01666.555.888</strong></a></li>
+		</ul>
+	</div>
+</footer>
+
 <div class="getleads">
 	<section id="contact3-2" class="p-y-lg contact bg-edit bg-dark" data-selector="block" style="background: url('images/bgft.jpg') top center;border-radius:0px;padding-top:20px;padding-bottom:50px;">
 		<div class="container">
