@@ -70,9 +70,19 @@ if(isset($_POST['name'])) {
 	<script src="js/custom.js"></script>
 	<script src="js/carouseller.min.js"></script>
 	<script src="js/jquery.easing.1.3.js"></script>
-
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-MPQ42HG');</script>
+	<!-- End Google Tag Manager -->
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPQ42HG"
+				  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <div class="getleads">
 	<div class="background-nav" style="height: 58px;"></div>
 	<header id="nav1-1-f">
@@ -130,7 +140,7 @@ if(isset($_POST['name'])) {
 					</div>
 					<div style="clear:both"></div>
 					<div class="clearboth text-center">
-						<a href="#" style="font-weight:bold;color:#f99e1a; border:2px solid #f99e1a;padding-left:40px;padding-right:40px;padding-top:15px;padding-bottom:15px;font-size:20px; text-transform:uppercase; border-radius:8px;">Xem thêm</a>
+						<a href="#contact3-2" style="font-weight:bold;color:#f99e1a; border:2px solid #f99e1a;padding-left:40px;padding-right:40px;padding-top:15px;padding-bottom:15px;font-size:20px; text-transform:uppercase; border-radius:8px;">Đăng ký ngay</a>
 					</div>
 				</div>
 			</div>
