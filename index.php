@@ -69,7 +69,7 @@ if(isset($_POST['name'])) {
 	<script src="js/wow.min.js"></script>
 	<script src="js/custom.js"></script>
 	<script src="js/carouseller.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
+<!--	<script src="js/jquery.easing.1.3.js"></script>-->
 	<!-- Google Tag Manager -->
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -283,7 +283,7 @@ if(isset($_POST['name'])) {
 
 
 				<!-- FlexSlider -->
-				<script defer src="js/jquery.flexslider.js"></script>
+<!--				<script defer src="js/jquery.flexslider.js"></script>-->
 
 				<script type="text/javascript">
 					$(function(){
@@ -379,18 +379,6 @@ if(isset($_POST['name'])) {
 </div>
 
 
-<footer id="footer">
-
-	<div class="btn-group dropup btn-call-us">
-		<button type="button" class="btn btn-default dropdown-toggle call-us" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Call us now !!!</button>
-
-		<ul class="dropdown-menu list-phone">
-			<!-- Dropdown menu links -->
-			<li><a href="tel:01666555888"><strong>01666.555.888</strong></a></li>
-		</ul>
-	</div>
-</footer>
-
 <div class="getleads">
 	<section id="contact3-2" class="p-y-lg contact bg-edit bg-dark" data-selector="block" style="background: url('images/bgft.jpg') top center;border-radius:0px;padding-top:20px;padding-bottom:50px;">
 		<div class="container">
@@ -450,6 +438,18 @@ if(isset($_POST['name'])) {
 	</section>
 </div>
 
+<footer id="footer">
+	<div class="btn-group dropup btn-call-us">
+		<button type="button" class="btn btn-default dropdown-toggle call-us" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Call us now !!!</button>
+
+		<ul class="dropdown-menu list-phone">
+			<!-- Dropdown menu links -->
+			<li><a href="tel:01666555888"><strong>01666.555.888</strong></a></li>
+		</ul>
+	</div>
+</footer>
+
+<script type='text/javascript'>window._sbzq||function(e){e._sbzq=[];var t=e._sbzq;t.push(["_setAccount",56180]);var n=e.location.protocol=="https:"?"https:":"http:";var r=document.createElement("script");r.type="text/javascript";r.async=true;r.src=n+"//static.subiz.com/public/js/loader.js";var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)}(window);</script>
 
 </body>
 </html>

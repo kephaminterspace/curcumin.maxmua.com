@@ -5431,11 +5431,8 @@
 /*# sourceMappingURL=style.css.map */
 
 
-
-
-
 #footer{
-  height: 110px;
+  /*height: 110px;*/
   background: #084382;
   position: relative;
 }
@@ -5443,7 +5440,7 @@
 .btn-call-us{
   position: fixed;
   bottom: 0;
-  right: 25px;
+  left : 5px;
 }
 
 .call-us{
@@ -5541,10 +5538,11 @@
   color: #30588c;
 }
 
-.error-help-block{
+.error-help-block {
   display: block;
   margin-top: 5px;
   font-size: 13px;
   color: #d80228;
   text-align: left;
+}
 
