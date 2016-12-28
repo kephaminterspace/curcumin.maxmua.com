@@ -65,12 +65,12 @@ $(document).ready(function() {
     // $('.mp-singleimg').magnificPopup({
     //     type: 'image'
     // });
-    $('.mp-gallery').magnificPopup({
-        type: 'image',
-        gallery: {
-            enabled: true
-        }
-    });
+    // $('.mp-gallery').magnificPopup({
+    //     type: 'image',
+    //     gallery: {
+    //         enabled: true
+    //     }
+    // });
     // $('.mp-iframe').magnificPopup({
     //     type: 'iframe'
     // });

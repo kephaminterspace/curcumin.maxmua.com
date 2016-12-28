@@ -118,7 +118,7 @@ if(isset($_POST['name'])) {
 	<section id="hero1-1-a" class="hero bg-img" style="background: url('images/bg.jpg') no-repeat center;">
 		<div class="container vertical-center-rel">
 			<div class="row">
-				<div style="text-align:center;">
+				<div class="text-baner">
 					<h1 style="color:#003300; font-size:60px; padding-bottom:0; margin:0;text-transform:uppercase">OIC NANO CURCUMIN</h1>
 					<p style="color:#003300; font-size:23px; margin:0; padding:0;text-transform:uppercase">Hỗ trợ phòng chống ung thư, bảo vệ sức khỏe</p>
 					<h1 style=" color:#F00; font-size:40px; padding-bottom:0; margin:0;text-transform:uppercase">chỉ với 900,000 VND cho 50ml curcumin</h1>
@@ -251,15 +251,6 @@ if(isset($_POST['name'])) {
 								</div>
 							</li>
 							<li>
-								<img src="https://4.bp.blogspot.com/-U9Z2Ih6NFJs/VuglnWaLAsI/AAAAAAAAAOQ/TQdTST7GYDsy32bgwD4PAfSjtHQT6Idnw/s640/Hong-Nam-hot-boy-cau-long-3-4237-1398529648.jpg" />
-								<p>Sau 1 thời gian sử dụng Nano Curcumin, tôi cảm thấy hiệu quả rõ rệt, rất dễ uống thoải mái khi ăn uống vì căn bệnh dạ dày đã thuyên
-								</p>
-								<div class="info">
-									<span>Trần Duy Khánh</span>
-									<p>CEO</p>
-								</div>
-							</li>
-							<li>
 								<img src="http://a9.vietbao.vn/images/vn965/cong-nghe/67477975-vnm_2014_7328264.jpg" />
 								<p>Sau 1 thời gian sử dụng Nano Curcumin, tôi cảm thấy hiệu quả rõ rệt, rất dễ uống thoải mái khi ăn uống vì căn bệnh dạ dày đã thuyên
 								</p>
@@ -283,12 +274,12 @@ if(isset($_POST['name'])) {
 
 
 				<!-- FlexSlider -->
-<!--				<script defer src="js/jquery.flexslider.js"></script>-->
+				<script defer src="js/jquery.flexslider.js"></script>
 
 				<script type="text/javascript">
-					$(function(){
-						SyntaxHighlighter.all();
-					});
+//					$(function(){
+//						SyntaxHighlighter.all();
+//					});
 					$(window).load(function(){
 						$('.flexslider').flexslider({
 							animation: "slide",
@@ -440,16 +431,20 @@ if(isset($_POST['name'])) {
 
 <footer id="footer">
 	<div class="btn-group dropup btn-call-us">
-		<button type="button" class="btn btn-default dropdown-toggle call-us" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Call us now !!!</button>
-
-		<ul class="dropdown-menu list-phone">
-			<!-- Dropdown menu links -->
-			<li><a href="tel:01666555888"><strong>01666.555.888</strong></a></li>
-		</ul>
+		<button type="button" class="btn dropdown-toggle call-us" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href="tel:01666555888" style="color: #ffffff;"><strong>01666.555.888</strong></a></button>
 	</div>
 </footer>
 
-<script type='text/javascript'>window._sbzq||function(e){e._sbzq=[];var t=e._sbzq;t.push(["_setAccount",56180]);var n=e.location.protocol=="https:"?"https:":"http:";var r=document.createElement("script");r.type="text/javascript";r.async=true;r.src=n+"//static.subiz.com/public/js/loader.js";var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)}(window);</script>
+<script type='text/javascript'>
+
+	var width = $(window).width(), height = $(window).height();
+	if ((width <= 1023) && (height >= 768)) {
+		jQuery(".text-baner").attr('style','text-align:center;margin-top:150px;');
+	} else {
+		jQuery(".text-baner").attr('style','text-align:center;');
+		window._sbzq||function(e){e._sbzq=[];var t=e._sbzq;t.push(["_setAccount",56180]);var n=e.location.protocol=="https:"?"https:":"http:";var r=document.createElement("script");r.type="text/javascript";r.async=true;r.src=n+"//static.subiz.com/public/js/loader.js";var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)}(window);
+	}
+</script>
 
 </body>
 </html>
