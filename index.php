@@ -431,7 +431,7 @@ if(isset($_POST['name'])) {
 
 <footer id="footer">
 	<div class="btn-group dropup btn-call-us">
-		<button type="button" class="btn dropdown-toggle call-us" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href="tel:01666555888" style="color: #ffffff;"><strong>01666.555.888</strong></a></button>
+		<a href="tel:01666555888" style="color: #ffffff;" class="btn dropdown-toggle call-us"><strong>01666.555.888</strong></a>
 	</div>
 </footer>
 
