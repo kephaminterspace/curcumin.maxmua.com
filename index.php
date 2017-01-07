@@ -119,10 +119,13 @@ if(isset($_POST['name'])) {
 		<div class="container vertical-center-rel">
 			<div class="row">
 				<div class="text-baner">
-					<h1 style="color:#003300; font-size:60px; padding-bottom:0; margin:0;text-transform:uppercase">OIC NANO CURCUMIN</h1>
-					<p style="color:#003300; font-size:23px; margin:0; padding:0;text-transform:uppercase">Hỗ trợ phòng chống ung thư, bảo vệ sức khỏe</p>
-					<h1 style=" color:#F00; font-size:40px; padding-bottom:0; margin:0;text-transform:uppercase">chỉ với 900,000 VND cho 50ml curcumin</h1>
-					<p style="color: #333; font-size:36px; font-weight:bold; margin:0; padding:0;text-transform:uppercase">hotline: 01666.555.888</p>
+					<h1 style="color: #00923f;
+   -webkit-text-fill-color: #ffffff; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: #00923f; font-size:60px; padding-bottom:0; margin:0;text-transform:uppercase">OIC NANO CURCUMIN</h1>
+					<p style="color:#00923f; font-size:23px; margin:0; padding:0;text-transform:uppercase">Hỗ trợ phòng chống ung thư, bảo vệ sức khỏe</p>
+					<h1 style=" color:#f99e1a; font-size:40px; padding-bottom:0; margin:0;text-transform:uppercase">chỉ với 18k mỗi ngày</h1>
+					<p style="color: #333; font-size:36px; margin:0; padding:0;text-transform:uppercase">hotline: <span style="font-weight:bold; color: #F00;">01666.555.888</p>
 				</div>
 			</div>
 		</div>
@@ -140,7 +143,7 @@ if(isset($_POST['name'])) {
 					</div>
 					<div style="clear:both"></div>
 					<div class="clearboth text-center">
-						<a href="#contact3-2" style="font-weight:bold;color:#f99e1a; border:2px solid #f99e1a;padding-left:40px;padding-right:40px;padding-top:15px;padding-bottom:15px;font-size:20px; text-transform:uppercase; border-radius:8px;">Đăng ký ngay</a>
+						<a href="#contact3-2" style="font-weight:bold;color:#00923f; border:2px solid #f99e1a;padding-left:40px;padding-right:40px;padding-top:15px;padding-bottom:15px;font-size:20px; text-transform:uppercase; border-radius:8px;">Đăng ký ngay</a>
 					</div>
 				</div>
 			</div>
@@ -187,7 +190,7 @@ if(isset($_POST['name'])) {
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
 					<div class="section-header text-center wow fadeIn" style="visibility: visible; animation: fadeIn; -webkit-animation: fadeIn;">
-						<h2 data-selector="text1" style=" color:#ff9700; text-transform:uppercase; font-size:28px; padding-bottom:50px;">tại sao chọn OIC NANO CURCUMIN?</h2>
+						<h2 data-selector="text1" style=" color:#00923f; text-transform:uppercase; font-size:28px; padding-bottom:50px;">tại sao chọn OIC NANO CURCUMIN?</h2>
 					</div>
 				</div>
 			</div>
@@ -195,20 +198,22 @@ if(isset($_POST['name'])) {
 		<div class="container">
 			<div class="row">
 				<div data-wow-delay="0.5s" class="wow fadeInDownBig thanhphan"><img src="images/thanh-phan.png"> </div>
-				<div data-wow-delay="1.2s" class="wow bounceInLeft text1">Là sản phẩm duy nhất của nano curcumin ở dạng chất lỏng, hòa tan 100% trong nước, không tạo cặn: khi các phân tử curcumin được chia tách thành các hạt nano có kích thước siêu nhỏ từ 40-60 nanomet, các hạt nano này luôn có xu hướng gắn kết lại với nhau tạo thành kích thước hạt to hơn, không còn dưới dạng NANO nữa.</div>
+				<div data-wow-delay="1.2s" class="wow bounceInLeft text1" style="padding:5px;">
+					<strong>-</strong>&nbsp;&nbsp;Là sản phẩm duy nhất của nano curcumin ở dạng chất lỏng, hòa tan 100% trong nước, không tạo cặn: khi các phân tử curcumin được chia tách thành các hạt nano có kích thước siêu nhỏ từ 40-60 nanomet, các hạt nano này luôn có xu hướng gắn kết lại với nhau tạo thành kích thước hạt to hơn, không còn dưới dạng NANO nữa.</div>
 				<div data-wow-delay="1s" class="wow bounceInLeft con1"><img src="images/con1.png"></div>
-				<div data-wow-delay="1.8s" class="wow bounceInRight text2">Là sản phẩm NANO CURCUMIN có thành phần Curcumin cao nhất lên tới 14,2%, do vậy chỉ với mỗi liều lượng 1ml pha vào nước tinh khiết các bạn đã có một cốc nano curcumin màu vàng sậm, khác hẳn với các loại NANO CURCUMIN khác đang bán trên thị trường</div>
+				<div data-wow-delay="1.8s" class="wow bounceInRight text2" style="padding:5px;">
+					<strong>-</strong>&nbsp;&nbsp;Là sản phẩm NANO CURCUMIN có thành phần Curcumin cao nhất lên tới 14,2%, do vậy chỉ với mỗi liều lượng 1ml pha vào nước tinh khiết các bạn đã có một cốc nano curcumin màu vàng sậm, khác hẳn với các loại NANO CURCUMIN khác đang bán trên thị trường</div>
 				<div data-wow-delay="1.5s" class="wow bounceInRight con2"><img src="images/con2.png"></div>
-				<div data-wow-delay="2.2s" class="wow bounceInLeft text3">
-					các hạt NANO CURCUMIN tách dời nhau nhờ vào 3 lớp vỏ bọc của mang tính bazơ yếu, ba lớp vỏ bọc này luôn đảm bảo cho CURCUMIN luôn ở dạng NANO, dạng NANO là dạng vật chất siêu nhỏ, có khả năng thẩm thấu tốt nhất và phát huy tốt nhất tác dụng
+				<div data-wow-delay="2.2s" class="wow bounceInLeft text3" style="padding:5px;">
+					<strong>-</strong>&nbsp;&nbsp;Các hạt NANO CURCUMIN tách dời nhau nhờ vào 3 lớp vỏ bọc của mang tính bazơ yếu, ba lớp vỏ bọc này luôn đảm bảo cho CURCUMIN luôn ở dạng NANO, dạng NANO là dạng vật chất siêu nhỏ, có khả năng thẩm thấu tốt nhất và phát huy tốt nhất tác dụng
 				</div>
 				<div data-wow-delay="2s" class="wow bounceInLeft con3"><img src="images/con3.png"></div>
-				<div data-wow-delay="2.7s" class="wow bounceInRight text4">
-					Sản phẩm của chúng tôi được chiết suất 100% từ nghệ trồng ở khu vực nghệ an, 100% sản phẩm từ thiên nhiên, 100% là sản phẩm curcumin của việt nam. CURCUMIN của việt nam được các nhà khoa học trên thế giới đánh giá là curcumin tốt nhất thế giới.
+				<div data-wow-delay="2.7s" class="wow bounceInRight text4" style="padding:5px;">
+					<strong>-</strong>&nbsp;&nbsp;Sản phẩm của chúng tôi được chiết suất 100% từ nghệ trồng ở khu vực nghệ an, 100% sản phẩm từ thiên nhiên, 100% là sản phẩm curcumin của việt nam. CURCUMIN của việt nam được các nhà khoa học trên thế giới đánh giá là curcumin tốt nhất thế giới.
 				</div>
 				<div data-wow-delay="2.5s" class="wow bounceInRight con4"><img src="images/con4.png"></div>
-				<div data-wow-delay="3.2s" class="wow bounceInUp text5">
-					Một điều đặc biệt nữa là sản phẩm của chúng tôi chứa 14,2% curcumin, còn lại là phụ liệu vừa đủ được nhập khẩu từ Đức và Mỹ, toàn bộ tinh dầu nghệ đã được tách bỏ do vậy đây là một sản phẩm cao cấp, các bạn không lo bị nóng (khi dùng các sản phẩm từ nghệ mà cơ thể bị nóng trong là do tác dụng phụ của tinh dầu nghệ)
+				<div data-wow-delay="3.2s" class="wow bounceInUp text5" style="padding:5px;">
+					<strong>-</strong>&nbsp;&nbsp;Một điều đặc biệt nữa là sản phẩm của chúng tôi chứa 14,2% curcumin, còn lại là phụ liệu vừa đủ được nhập khẩu từ Đức và Mỹ, toàn bộ tinh dầu nghệ đã được tách bỏ do vậy đây là một sản phẩm cao cấp, các bạn không lo bị nóng (khi dùng các sản phẩm từ nghệ mà cơ thể bị nóng trong là do tác dụng phụ của tinh dầu nghệ)
 				</div>
 				<div data-wow-delay="3s" class="wow bounceInUp con5"><img src="images/con5.png"></div>
 			</div>
@@ -307,7 +312,7 @@ if(isset($_POST['name'])) {
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
 					<div class="text-center wow fadeIn" style="visibility: visible; animation: fadeIn; -webkit-animation: fadeIn;">
-						<h2 data-selector="text1" style="color:#ff9700; text-transform:uppercase; font-size:28px;">quy trình làm ra sản phẩm nano curcumin</h2>
+						<h2 data-selector="text1" style="color:#00923f; text-transform:uppercase; font-size:28px;">quy trình làm ra sản phẩm nano curcumin</h2>
 						<p class="lead" data-selector="text2" style="color:#333333;font-size:18px;margin-bottom:10px;">Chúng tôi đã và đang nỗ lực hết mình trong việc mang đến cho khách hàng những sản phẩm tốt nhất chăm sóc sức khỏe cho mọi người!</p>
 					</div>
 				</div>
@@ -355,15 +360,15 @@ if(isset($_POST['name'])) {
 		<div class="row" style="padding-top:30px; padding-bottom:30px; text-align:center">
 			<div class="col-md-4">
 				<img src="images/s1.jpg">
-				<p style="color:#f99e1a; font-size:20px; padding-top:15px;">Thiết bị đạt chuẩn GMP, nhập khẩu từ G7, Nga hoặc Israel</p>
+				<p style="color:#00923f; font-size:20px; padding-top:15px;">Thiết bị đạt chuẩn GMP, nhập khẩu từ G7, Nga hoặc Israel</p>
 			</div>
 			<div class="col-md-4">
 				<img src="images/s2.jpg">
-				<p style="color:#f99e1a; font-size:20px; padding-top:15px;">Dược liệu đạt chuẩn USP hoặc EP</p>
+				<p style="color:#00923f; font-size:20px; padding-top:15px;">Dược liệu đạt chuẩn USP hoặc EP</p>
 			</div>
 			<div class="col-md-4">
 				<img src="images/s3.jpg">
-				<p style="color:#f99e1a; font-size:20px; padding-top:15px;">Nguyên liệu từ Curcuminoid nguồn gốc Nghệ vàng của Việt nam đạt 3 pic</p>
+				<p style="color:#00923f; font-size:20px; padding-top:15px;">Nguyên liệu từ Curcuminoid nguồn gốc Nghệ vàng của Việt nam đạt 3 pic</p>
 			</div>
 		</div>
 	</div>
