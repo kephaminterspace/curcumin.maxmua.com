@@ -115,8 +115,8 @@ if(isset($_POST['name'])) {
 </div>
 
 <div class="getleads">
-	<section id="hero1-1-a" class="hero bg-img" style="background: url('images/bg.jpg') no-repeat center;">
-		<div class="container vertical-center-rel">
+	<section id="hero1-1-a" class="hero bg-img" style="background: url('images/bg1.png') no-repeat center;">
+		<div class="container vertical-center-rel" style="margin-top: 50px;">
 			<div class="row">
 				<div class="text-baner">
 					<h1 style="color: #00923f;
@@ -124,7 +124,7 @@ if(isset($_POST['name'])) {
    -webkit-text-stroke-width: 2px;
    -webkit-text-stroke-color: #00923f; font-size:60px; padding-bottom:0; margin:0;text-transform:uppercase">OIC NANO CURCUMIN</h1>
 					<p style="color:#00923f; font-size:23px; margin:0; padding:0;text-transform:uppercase">Hỗ trợ phòng chống ung thư, bảo vệ sức khỏe</p>
-					<h1 style=" color:#f99e1a; font-size:40px; padding-bottom:0; margin:0;text-transform:uppercase">chỉ với 18k mỗi ngày</h1>
+					<h1 style=" color:#00923f; font-size:40px; padding-bottom:0; margin:0;text-transform:uppercase">chỉ với 18k mỗi ngày</h1>
 					<p style="color: #333; font-size:36px; margin:0; padding:0;text-transform:uppercase">hotline: <span style="font-weight:bold; color: #F00;">01666.555.888</p>
 				</div>
 			</div>
@@ -386,29 +386,34 @@ if(isset($_POST['name'])) {
 					</div>
 				</div>
 			</div>
-			<div class="row c2 text-white" style="width:69%; margin:auto; text-align:center">
-				<h4 class="f-w-900 m-b-md" data-selector="text3" style="color:#ffffff;font-size:20px;margin-bottom:10px; text-transform:none; font-weight:normal;">Hãy để lại thông tin bên dưới chúng tôi sẽ sớm
-					liên hệ lại tư vấn cho bạn:</h4>
-				<form class="horizontal form-white" id="contactform" method="post" action="index.php#contact3-2">
-					<?php if(isset($message)){ ?>
-						<p style="color: red; "> <?php echo $message; ?></p>
-					<?php } ?>
+			<div class="row c2 text-white" style="text-align:center">
+				<div class="col-md-6">
+					<h4 class="f-w-900 m-b-md" data-selector="text3" style="color:#ffffff;font-size:20px;margin-bottom:10px; text-transform:none; font-weight:normal;">Hãy để lại thông tin bên dưới chúng tôi sẽ sớm
+						liên hệ lại tư vấn cho bạn:</h4>
+					<form class="horizontal form-white" id="contactform" method="post" action="index.php#contact3-2">
+						<?php if(isset($message)){ ?>
+							<p style="color: red; "> <?php echo $message; ?></p>
+						<?php } ?>
 
-					<div class="form-group">
-						<input id="name" class="form-control" name="name" value="<?php if(isset($_POST['name'])) { echo $_POST['name']; } ?>" type="text" required placeholder="Họ và tên *:" required oninvalid="setCustomValidity('Họ và tên không để trống')" oninput="setCustomValidity('')">
-					</div>
-					<div class="form-group">
-						<input id="email" class="form-control" name="email" value="<?php if(isset($_POST['email'])) { echo $_POST['email']; } ?>" type="text" required placeholder="Địa chỉ email *:" required pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" oninvalid="setCustomValidity('Địa chỉ email không chính xác!')" oninput="setCustomValidity('')">
-					</div>
-					<div class="form-group">
-						<input id="phone" class="form-control"name="phone" value="<?php if(isset($_POST['phone'])) { echo $_POST['phone']; } ?>" type="text" required placeholder="Số điện thoại *:" required pattern="^[0-9]{10,12}$" oninvalid="setCustomValidity('Số điện thoại không đúng')" oninput="setCustomValidity('')">
-					</div>
-					<div class="form-group m-b-0">
-						<button type="submit" class="btn btn-green wow pulse" data-wow-iteration="2" data-selector="btn" style="font-weight: 700; color: rgb(255, 255, 255); background-color: rgb(249, 158, 26); border-width: 0px; border-style: solid; padding: 20px; font-size: 16px; max-width: 400px; visibility: visible; animation-iteration-count: 2; animation-name: pulse;">NHẬN TƯ VẤN NGAY</button>
-					</div>
-				</form>
-
+						<div class="form-group">
+							<input id="name" class="form-control" name="name" value="<?php if(isset($_POST['name'])) { echo $_POST['name']; } ?>" type="text" required placeholder="Họ và tên *:" required oninvalid="setCustomValidity('Họ và tên không để trống')" oninput="setCustomValidity('')">
+						</div>
+						<div class="form-group">
+							<input id="email" class="form-control" name="email" value="<?php if(isset($_POST['email'])) { echo $_POST['email']; } ?>" type="text" required placeholder="Địa chỉ email *:" required pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" oninvalid="setCustomValidity('Địa chỉ email không chính xác!')" oninput="setCustomValidity('')">
+						</div>
+						<div class="form-group">
+							<input id="phone" class="form-control"name="phone" value="<?php if(isset($_POST['phone'])) { echo $_POST['phone']; } ?>" type="text" required placeholder="Số điện thoại *:" required pattern="^[0-9]{10,12}$" oninvalid="setCustomValidity('Số điện thoại không đúng')" oninput="setCustomValidity('')">
+						</div>
+						<div class="form-group m-b-0">
+							<button type="submit" class="btn btn-green wow pulse" data-wow-iteration="2" data-selector="btn" style="font-weight: 700; color: rgb(255, 255, 255); background-color: rgb(249, 158, 26); border-width: 0px; border-style: solid; padding: 20px; font-size: 16px; max-width: 400px; visibility: visible; animation-iteration-count: 2; animation-name: pulse;">NHẬN TƯ VẤN NGAY</button>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-6">
+					<img src="images/giaychungnhan.jpg" style="height: 600px; width: 100%">
+				</div>
 			</div>
+
 			<div class="row" style="border-top: 5px solid #f99e1a; margin-top:30px;">
 				<div class="col-md-4">
 					<p style="padding-top:20px;"><img src="images/logo-white.png"></p>
