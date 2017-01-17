@@ -101,7 +101,7 @@ div[class^=swiper-container] {
 .getleads, .multifour {
   font-size: 16px;
   line-height: 1.42857143;
-  color: #69696E;
+  /*color: #69696E;*/
   font-weight: 400;
   padding: 0;
   margin: 0;

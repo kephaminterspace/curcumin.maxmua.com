@@ -63,12 +63,14 @@ if(isset($_POST['name'])) {
 	<link rel="stylesheet" href="css/custom.css">
 	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="css/carouseller.css">
-
+    <link rel="stylesheet" href="css/colorbox.css">
 	<script src="js/jquery-2.2.3.min.js" type="text/javascript"></script>
 	<script src="js/bootstrap.min.js" type="text/javascript"></script>
 	<script src="js/wow.min.js"></script>
 	<script src="js/custom.js"></script>
 	<script src="js/carouseller.min.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
+
 <!--	<script src="js/jquery.easing.1.3.js"></script>-->
 	<!-- Google Tag Manager -->
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -139,7 +141,9 @@ if(isset($_POST['name'])) {
 				<h2 class="m-b-md">NANO CURCUMIN chiết xuất 100% từ nghệ tự nhiên</h2>
 				<div style="color:#333333;font-size:16px;margin-bottom:25px;">
 					<div style="margin-bottom:60px; text-align:justify ">
-						OIC NANO CURCUMIN là sản phẩm duy nhất của nano curcumin ở dạng chất lỏng, hòa tan 100% trong nước, không tạo cặn: khi các phân tử curcumin được chia tách thành các hạt nano có kích thước siêu nhỏ từ 40-60 nanomet, các hạt nano này luôn có xu hướng gắn kết lại với nhau tạo thành kích thước hạt to hơn, không còn dưới dạng NANO nữa. Chúng tôi đã nghiên cứu và có bằng phát minh sáng chế ra qui trinh điều chế vi nhũ tương nano curcumin
+						OIC NANO CURCUMIN là sản phẩm duy nhất của nano curcumin ở dạng chất lỏng, hòa tan 100% trong nước, không tạo cặn: khi các phân tử curcumin được chia tách thành các hạt nano có kích thước siêu nhỏ từ 40-60 nanomet, các hạt nano này luôn có xu hướng gắn kết lại với nhau tạo thành kích thước hạt to hơn, không còn dưới dạng NANO nữa.
+						Sau nhiều năm nghiên cứu, chúng tôi đã phát minh ra qui trình điều chế vi nhũ tương nano curcumin, giúp cho các phần tử curcumin luôn tồn tại dưới dạng hạt nano siêu nhỏ, có thể thẩm thấu ngay qua lớp màng tế bào khi vào cơ thể con người, qua đó phát huy tối đa khả năng hấp thụ cũng như hiệu quả của curcumin trong quá trình sử dụng.
+						Với phát minh này, ngày 13 tháng 10 năm 2016, chúng tôi rất vinh dự được đón nhận bằng độc quyền sáng chế số 16095 do Cục sở hữu trí tuệ, Bộ Khoa học công nghệ cấp, có thời hạn 20 năm và được bảo hộ theo luật sở hưu trí tuệ trên toàn thế giới.
 					</div>
 					<div style="clear:both"></div>
 					<div class="clearboth text-center">
@@ -158,13 +162,13 @@ if(isset($_POST['name'])) {
 				<div class="col-md-12 c4 contact-divider text-white text-center">
 
 					<div class="col-md-3">
-						<img src="images/ss1.jpg" alt="None" class="congdung">
-						<h5 class="f-w-900" data-selector="text1" style="font-weight:700;color:#333333;font-size:15px; text-transform:uppercase">Chống oxy hóa</h5>
+						<img src="images/ss2.jpg" alt="None" class="congdung">
+						<h5 class="f-w-900" data-selector="text1" style="font-weight:700;color:#333333;font-size:15px; text-transform:uppercase">Điều trị các bệnh về dạ dày, đại tràng</h5>
 						<div data-selector="text2" style="font-weight:400;color:#333333;font-size:13px;"><p>Bảo vệ và giúp làm lành tổn thương niên mạc dạ dày, giúp các vết thương nhanh liền sẹo và làm mờ các vết thâm nám</p></div>
 					</div>
 					<div class="col-md-3">
-						<img src="images/ss2.jpg" alt="None" class="congdung">
-						<h5 class="f-w-900" data-selector="text1" style="font-weight:700;color:#333333;font-size:15px; text-transform:uppercase">Tiêu diệt các tế bào lạ</h5>
+						<img src="images/ss1.jpg" alt="None" class="congdung">
+						<h5 class="f-w-900" data-selector="text1" style="font-weight:700;color:#333333;font-size:15px; text-transform:uppercase">Chống oxy hóa, tiêu diệt các tế bào lạ</h5>
 						<div data-selector="text2" style="font-weight:400;color:#333333;font-size:13px;"><p>giúp hỗ trợ quá trinh điều trị bệnh nhận ung thư, bệnh nhân đang xạ trị</p></div>
 					</div>
 					<div class="col-md-3">
@@ -199,17 +203,17 @@ if(isset($_POST['name'])) {
 			<div class="row">
 				<div data-wow-delay="0.5s" class="wow fadeInDownBig thanhphan"><img src="images/thanh-phan.png"> </div>
 				<div data-wow-delay="1.2s" class="wow bounceInLeft text1" style="padding:5px;">
-					<strong>-</strong>&nbsp;&nbsp;Là sản phẩm duy nhất của nano curcumin ở dạng chất lỏng, hòa tan 100% trong nước, không tạo cặn: khi các phân tử curcumin được chia tách thành các hạt nano có kích thước siêu nhỏ từ 40-60 nanomet, các hạt nano này luôn có xu hướng gắn kết lại với nhau tạo thành kích thước hạt to hơn, không còn dưới dạng NANO nữa.</div>
+					<strong>-</strong>&nbsp;&nbsp;Là sản phẩm duy nhất của nano curcumin ở dạng chất lỏng, phát tán (hòa tan) 100% trong nước, không tạo cặn. với liều lượng 1ml pha với một cốc nước ấm 150ml, các bạn có thể dễ dàng uống như uông nước hàng ngày.</div>
 				<div data-wow-delay="1s" class="wow bounceInLeft con1"><img src="images/con1.png"></div>
 				<div data-wow-delay="1.8s" class="wow bounceInRight text2" style="padding:5px;">
-					<strong>-</strong>&nbsp;&nbsp;Là sản phẩm NANO CURCUMIN có thành phần Curcumin cao nhất lên tới 14,2%, do vậy chỉ với mỗi liều lượng 1ml pha vào nước tinh khiết các bạn đã có một cốc nano curcumin màu vàng sậm, khác hẳn với các loại NANO CURCUMIN khác đang bán trên thị trường</div>
+					<strong>-</strong>&nbsp;&nbsp;Là sản phẩm NANO CURCUMIN có thành phần Curcumin cao nhất lên tới 14,2%, do vậy chỉ với mỗi liều lượng 1ml pha vào nước tinh khiết các bạn đã có một cốc nano curcumin màu vàng sậm, đậm đặc, cung cấp đủ lượng curcumin cần thiết cho quá trình hỗ trợ điều trị bệnh và bảo vệ cơ thể mỗi ngày.</div>
 				<div data-wow-delay="1.5s" class="wow bounceInRight con2"><img src="images/con2.png"></div>
 				<div data-wow-delay="2.2s" class="wow bounceInLeft text3" style="padding:5px;">
-					<strong>-</strong>&nbsp;&nbsp;Các hạt NANO CURCUMIN tách dời nhau nhờ vào 3 lớp vỏ bọc của mang tính bazơ yếu, ba lớp vỏ bọc này luôn đảm bảo cho CURCUMIN luôn ở dạng NANO, dạng NANO là dạng vật chất siêu nhỏ, có khả năng thẩm thấu tốt nhất và phát huy tốt nhất tác dụng
+					<strong>-</strong>&nbsp;&nbsp;Các phần tử curcumin trong sản phẩm của OIC luôn tồn tại dưới dạng nano siêu nhỏ chỉ từ 40 đến 60 nanomét, chúng được tách dời nhau nhờ 3 lớp vỏ bọc mang tính bazơ yếu, khi vào đến dạ dày gặp môi trường axít mạnh, ngay lập tức lớp vỏ bọc bazơ yếu bị phá vỡ, giải phóng nano curcumin, các phần tử nano curcumin siêu nhỏ này có thể thẩm thấu ngay qua lớp màng tế bào vào cơ thể, phát huy tối đa hiệu quả và tác dụng của curcumin trong phòng chống và hỗ trợ điều trị bệnh.
 				</div>
 				<div data-wow-delay="2s" class="wow bounceInLeft con3"><img src="images/con3.png"></div>
 				<div data-wow-delay="2.7s" class="wow bounceInRight text4" style="padding:5px;">
-					<strong>-</strong>&nbsp;&nbsp;Sản phẩm của chúng tôi được chiết suất 100% từ nghệ trồng ở khu vực nghệ an, 100% sản phẩm từ thiên nhiên, 100% là sản phẩm curcumin của việt nam. CURCUMIN của việt nam được các nhà khoa học trên thế giới đánh giá là curcumin tốt nhất thế giới.
+					<strong>-</strong>&nbsp;&nbsp;Sản phẩm của chúng tôi được chiết suất 100% từ nghệ tự nhiên được trồng ở khu vực nghệ an, Hưng yên, hoàn toàn là nghệ của Việt Nam. CURCUMIN trong nghệ của việt nam được các nhà khoa học trên thế giới đánh giá là tốt nhất thế giới.
 				</div>
 				<div data-wow-delay="2.5s" class="wow bounceInRight con4"><img src="images/con4.png"></div>
 				<div data-wow-delay="3.2s" class="wow bounceInUp text5" style="padding:5px;">
@@ -221,63 +225,179 @@ if(isset($_POST['name'])) {
 	</section>
 </div>
 <div class="getleads">
-	<section id="cta1-3" class="p-y-md bg-edit" data-selector="block" style="background: url('images/bghome.png') top center; padding-top:80px;padding-bottom:10px;">
+	<section id="cta1-3" class="p-y-md bg-edit" data-selector="block" style="background: url('images/bghome.jpg') top center; padding-bottom:10px;">
 		<div class="container">
 			<div class="row">
-				<p style=" font-size:18px; padding:5px; font-weight:bold; color:#fff; text-align:center; text-transform:uppercase">khách hàng nói về sản phẩm sau khi sử dụng sản phẩm</p>
+				<p style=" font-size:18px; padding:5px; font-weight:bold; color:#fff; text-align:center; text-transform:uppercase">Ý kiến chuyên gia và khách hàng</p>
 				<section class="slider">
 					<div class="flexslider carousel">
 						<ul class="slides" style="margin:auto;">
 							<li>
-								<img src="http://dongphuchocsinh.org/data/dongphucnganhang/Image/dong%20phuc%20nam%203.jpg" />
-								<p>Sau 1 thời gian sử dụng Nano Curcumin, tôi cảm thấy hiệu quả rõ rệt, rất dễ uống thoải mái khi ăn uống vì căn bệnh dạ dày đã thuyên
+								<img src="images/customer/A1.png" />
+								<p>Nano Curcumin dạng dung dịch có tác dụng với người bị viêm loét dạ dày, đại
+									tràng, men gan cao theo y học phương Đông đã được đúc kết...
+									<a class="box inline" href="#inline_content1">
+										Chi tiết
+									</a>
 								</p>
+
+								<!-- This contains the hidden content for inline calls -->
+								<div style='display:none'>
+									<div id='inline_content1' style='padding:10px; background:#fff;'>
+										<h3 style="text-align:center; "><strong>PGS – TS Lê Văn Thảo - Nguyên GD Bệnh Viện Ung Bướu Hà Nội - PCT thường trực hội Ung Thư Hà Nội</strong></h3>
+										<img src="images/t-bg.png" alt="#" style="width:100%; margin-bottom: 20px;">
+										<p>
+											Nano Curcumin dạng dung dịch có tác dụng với người bị viêm loét dạ dày, đại
+											tràng, men gan cao theo y học phương Đông đã được đúc kết. Với các đặc điểm của
+											Nano Curcumin có thể hỗ trợ điều trị ung thư khi bệnh nhân ung thư được điều trị
+											bằng phương pháp đặc hiệu
+										</p>
+									</div>
+								</div>
 								<div class="info">
-									<span>Nguyễn Tiến Thành</span>
-									<p>Nhân viên văn phòng</p>
+									<span>PGS – TS Lê Văn Thảo</span>
+									<p>Nguyên GD Bệnh Viện Ung Bướu Hà Nội</p>
+									<p>PCT thường trực hội Ung Thư Hà Nội</p>
 								</div>
 							</li>
+
+
 							<li>
-								<img src="http://img2.news.zing.vn/2013/07/15/ngan2.jpg" />
-								<p>Sau 1 thời gian sử dụng Nano Curcumin, tôi cảm thấy hiệu quả rõ rệt, rất dễ uống thoải mái khi ăn uống vì căn bệnh dạ dày đã thuyên
+								<img src="images/customer/A2.jpg" />
+								<p>Cách đây hơn một năm qua sự giới thiệu của anh Hải Minh thì tôi được biết đến sản phẩm dung dịch Nano Curcumin, sau một thời gian sử dụng đều đặn mỗi ngày 2 lần vào buổi sáng...
+									<a class="box inline" href="#inline_content3">
+										Chi tiết
+									</a>
 								</p>
+
+								<!-- This contains the hidden content for inline calls -->
+								<div style='display:none'>
+									<div id='inline_content3' style='padding:10px; background:#fff;'>
+										<h3 style="text-align:center; "><strong>Ông Đàm Xuân Lâm - Phó Tổng Giám Đốc KPMG</strong></h3>
+										<img src="images/t-bg.png" alt="#" style="width:100%; margin-bottom: 20px;">
+										<p>
+											Cách đây hơn một năm qua sự giới thiệu của anh Hải Minh thì tôi được biết đến sản phẩm dung dịch Nano Curcumin, sau một thời gian sử dụng đều đặn mỗi ngày 2 lần vào buổi sáng và buổi tối, tôi cảm nhận được sự hiệu quả của sản phẩm trên cả kỳ vọng của tôi.
+										</p>
+									</div>
+								</div>
 								<div class="info">
-									<span>Nguyễn Hà Ngân</span>
-									<p>Nhân viên văn phòng</p>
+									<span>Ông Đàm Xuân Lâm</span>
+									<p>Phó Tổng Giám Đốc KPMG</p>
 								</div>
 							</li>
+
+
 							<li>
-								<img src="http://img2.news.zing.vn/2012/11/12/nguyen-hoa-binh1.jpg" />
-								<p>Sau 1 thời gian sử dụng Nano Curcumin, tôi cảm thấy hiệu quả rõ rệt, rất dễ uống thoải mái khi ăn uống vì căn bệnh dạ dày đã thuyên
+								<img src="images/customer/A3.jpg" />
+								<p>Do đặc thù của công việc nên tôi thường xuyên phải đi tiếp khách nên không
+									thể tránh khỏi bia rượu. Trong lần khám sức khỏe vừa rồi tôi phát hiện ra men gan
+									của mình tăng rất cao đột biến,...
+									<a class="box inline" href="#inline_content3">
+										Chi tiết
+									</a>
 								</p>
+
+								<!-- This contains the hidden content for inline calls -->
+								<div style='display:none'>
+									<div id='inline_content3' style='padding:10px; background:#fff;'>
+										<h3 style="text-align:center; "><strong>Ông Võ Thanh Bình - Tập đoàn dầu khí Việt Nam</strong></h3>
+										<img src="images/t-bg.png" alt="#" style="width:100%; margin-bottom: 20px;">
+										<p>
+											Do đặc thù của công việc nên tôi thường xuyên phải đi tiếp khách nên không
+											thể tránh khỏi bia rượu. Trong lần khám sức khỏe vừa rồi tôi phát hiện ra men gan
+											của mình tăng rất cao đột biến, gấp 3 lần cho phép. Sau khi tìm hiểu qua tư vấn của
+											bác sĩ và các sản phẩm điều trị men gan trên thị trường, tôi đã lựa chọn dùng thử sản
+											phẩm Nano Curcumin OIC dạng dung dịch cho kết quả rất tốt và thấy rằng men gan
+											giảm về mức cho phép.
+										</p>
+									</div>
+								</div>
+
+
 								<div class="info">
-									<span>Lưu Quang Đại</span>
-									<p>Nhân viên văn phòng</p>
+									<span>Ông Võ Thanh Bình</span>
+									<p>Tập đoàn dầu khí Việt Nam</p>
 								</div>
 							</li>
+
+
 							<li>
-								<img src="http://a9.vietbao.vn/images/vn965/cong-nghe/67477975-vnm_2014_7328264.jpg" />
-								<p>Sau 1 thời gian sử dụng Nano Curcumin, tôi cảm thấy hiệu quả rõ rệt, rất dễ uống thoải mái khi ăn uống vì căn bệnh dạ dày đã thuyên
+								<img src="images/customer/A4.jpg" />
+								<p>Khi tôi sinh con, mẹ tôi rất vất vả. Bà đã dã nghệ tươi để trưng cất và xoa lên cơ thể để tránh các vấn đề hậu sản. Tuy nhiên tôi cảm thấy khó chịu khi bôi các dung dịch đó trên người trong thời gian dài....
+									<a class="box inline" href="#inline_content4">
+										Chi tiết
+									</a>
 								</p>
+
+								<!-- This contains the hidden content for inline calls -->
+								<div style='display:none'>
+									<div id='inline_content4' style='padding:10px; background:#fff;'>
+										<h3 style="text-align:center; "><strong>Bà Đỗ Tú Anh - Tổng Thư Ký Hội Doanh nghiệp trẻ Hà Nội</strong></h3>
+										<img src="images/t-bg.png" alt="#" style="width:100%; margin-bottom: 20px;">
+										<p>
+											Khi tôi sinh con, mẹ tôi rất vất vả. Bà đã dã nghệ tươi để trưng cất và xoa lên cơ thể để tránh các vấn đề hậu sản. Tuy nhiên tôi cảm thấy khó chịu khi bôi các dung dịch đó trên người trong thời gian dài. Cho đến khi biết đến sản phẩm Nano Curcumin dạng dung dịch tôi nghĩ rằng các bà mẹ sau khi sinh sử dụng sản phẩm này sẽ mang lại hiệu quả và giúp bồi bỏ sức khỏe.
+										</p>
+									</div>
+								</div>
+
+
 								<div class="info">
-									<span>Trần Thái Tuấn</span>
-									<p>Nhân viên Sale</p>
+									<span>Bà Đỗ Tú Anh</span>
+									<p>Tổng Thư Ký Hội Doanh nghiệp trẻ Hà Nội</p>
 								</div>
 							</li>
+
+
 							<li>
-								<img src="http://a4vn.com/media/wysiwyg/A-THOITRANG-2014/THANG-09/TTBAS-142612/1.jpg" />
-								<p>Sau 1 thời gian sử dụng Nano Curcumin, tôi cảm thấy hiệu quả rõ rệt, rất dễ uống thoải mái khi ăn uống vì căn bệnh dạ dày đã thuyên
-								</p>
+								<img src="images/customer/A5.jpg" />
+								<p>Tôi là người hoạt động trong ngành nghiên cứu nên các sản phẩm mà tôi sử dụng đều được nghiên cứu, đo đếm rất là cẩn thận. Tôi được biết theo Tạp Chí Y Khoa Thế Giới, đối với curcumin để ngấm vào người ..
+
+                                    <a class="box inline" href="#inline_content5">
+                                        Chi tiết
+                                    </a>
+                                </p>
+
+								<!-- This contains the hidden content for inline calls -->
+								<div style='display:none'>
+									<div id='inline_content5' style='padding:10px; background:#fff;'>
+										<h3 style="text-align:center; "><strong>Ông Nguyễn Minh Giáp - Tổng Giám Đốc EVD - CEO Câu Lạc Bộ West 6536</strong></h3>
+										<img src="images/t-bg.png" alt="#" style="width:100%; margin-bottom: 20px;">
+										<p>
+											Tôi là người hoạt động trong ngành nghiên cứu nên các sản phẩm mà tôi sử dụng đều được nghiên cứu, đo đếm rất là cẩn thận. Tôi được biết theo Tạp Chí Y Khoa Thế Giới, đối với curcumin để ngấm vào người đủ liều lượng bạn cần phải sử dụng 1,3 – 2,7kg/ngày, đây là điều khó khăn. Khi biết đến sản phẩm Nano Curcumin, tôi thấy có sự khác biệt đối với thị trường đặc biệt là ở dạng dung dịch. So sánh với các sản phẩm khác tôi thấy rằng, có những sản phẩm không hòa tan đọng ở phía đáy, còn với sản phẩm Nano Curcumin, tôi vô cùng ngạc nhiên khi cho kết quả hòa tan tuyệt đối. Đối với sản phẩm này, nên sử dụng cho các bệnh về dạ dày và niêm mạc dạ dày rất là tốt. Với kinh nghiệm của tôi sử dụng trong 3 lọ này theo liều lượng được khuyến cáo sẽ mang lại hiệu quả tuyệt đối.
+										</p>
+									</div>
+								</div>
+
+
 								<div class="info">
-									<span>Vũ Hải Nam</span>
-									<p>Kinh doanh tự do</p>
+									<span>Ông Nguyễn Minh Giáp</span>
+									<p>Tổng Giám Đốc EVD</p>
+									<p>CEO Câu Lạc Bộ West 6536</p>
 								</div>
 							</li>
+
+
+							<li>
+								<img src="images/customer/A6.jpg" />
+								<p>Tôi đã mắc căn bệnh dạ dày từ lâu và gây ra nhiều khó khăn trong cuộc sống. Kể từ
+									khi biết đến và sử dụng sản phẩm Nano Curcumin đã giúp căn bệnh của tôi cải thiện
+									rất nhiều.
+								</p>
+								<div class="info">
+									<span>Ông Nguyễn Xuân Phú</span>
+									<p>Chủ tịch Tập Đoàn SUNHOUSE</p>
+									<p>PCT Hội Doanh nghiệp Trẻ Hà Nội</p>
+								</div>
+							</li>
+
+
 						</ul>
 					</div>
 				</section>
 
-
+				<script>
+					$(".inline").colorbox({inline:true, width:"95%"});
+				</script>
 				<!-- FlexSlider -->
 				<script defer src="js/jquery.flexslider.js"></script>
 
@@ -313,7 +433,7 @@ if(isset($_POST['name'])) {
 				<div class="col-md-8 col-md-offset-2">
 					<div class="text-center wow fadeIn" style="visibility: visible; animation: fadeIn; -webkit-animation: fadeIn;">
 						<h2 data-selector="text1" style="color:#00923f; text-transform:uppercase; font-size:28px;">quy trình làm ra sản phẩm nano curcumin</h2>
-						<p class="lead" data-selector="text2" style="color:#333333;font-size:18px;margin-bottom:10px;">Chúng tôi đã và đang nỗ lực hết mình trong việc mang đến cho khách hàng những sản phẩm tốt nhất chăm sóc sức khỏe cho mọi người!</p>
+						<p class="lead" data-selector="text2" style="color:#333333;font-size:18px;margin-bottom:10px;">Chúng tôi đã và đang nỗ lực hết mình trong việc mang đến những sản phẩm tốt nhất chăm sóc sức khỏe cho mọi người!</p>
 					</div>
 				</div>
 			</div>
@@ -324,28 +444,28 @@ if(isset($_POST['name'])) {
 					<div data-wow-delay="1.5s" class="wow zoomIn quytrinh1"><img src="images/nut1.png"> </div>
 					<div data-wow-delay="1.7s" class="wow zoomIn qttext1">
 						<p>NGHỆ TƯƠI</p>
-						<p>Chúng tôi đã và đang nỗ lực hết mình mang đến cho khách hàng những sản phẩm</p>
+						<p>Nghệ thu hoạch từ tự nhiên, làm sạch và sơ chế, sấy khô</p>
 					</div>
 					<div data-wow-delay="2s" class="wow zoomIn quytrinh2"><img src="images/nut234.png"> </div>
 					<div data-wow-delay="2.2s" class="wow bounceInRight qttext2">
 						<p>BỘT NGHỆ</p>
-						<p>Chúng tôi đã và đang nỗ lực hết mình mang đến cho khách hàng những sản phẩm</p>
+						<p>Nghệ được say nghiền ra dưới dạng bột</p>
 					</div>
 					<div data-wow-delay="2.5s" class="wow zoomIn quytrinh3"><img src="images/nut234.png"> </div>
 					<div data-wow-delay="2.7s" class="wow bounceInLeft qttext3">
 						<p>TINH BỘT NGHỆ</p>
-						<p>Chúng tôi đã và đang nỗ lực hết mình mang đến cho khách hàng những sản phẩm</p>
+						<p>nghệ sau khi được tách hết dầu nghệ và các tạp chất khác</p>
 					</div>
 					<div data-wow-delay="3s" class="wow zoomIn quytrinh4"><img src="images/nut234.png"> </div>
 					<div data-wow-delay="3.2s" class="wow bounceInLeft qttext4">
 						<p>CURCUMIN</p>
-						<p>Chúng tôi đã và đang nỗ lực hết mình mang đến cho khách hàng những sản phẩm</p>
+						<p>Tinh bột nghệ sau khi được loại bỏ hoàn toàn các chất khác, còn lại là curcumin với tỉ lệ trên 95%</p>
 					</div>
 					<div data-wow-delay="3.5s" class="wow bounceInUp quytrinh6"><img src="images/nanocurcumin.png"> </div>
 					<div data-wow-delay="4s" class="wow zoomIn quytrinh5"><img src="images/nut5.png"> </div>
 					<div data-wow-delay="4.2s" class="wow fadeInRight qttext5">
 						<p>NANO CURCUMIN</p>
-						<p>Chúng tôi đã và đang nỗ lực hết mình mang đến cho khách hàng những sản phẩm</p>
+						<p>Điều chế từ curcumin có tỉ lệ thành phần cao hơn 95%, tạo thành Nano curcumin</p>
 					</div>
 
 				</div>
@@ -410,7 +530,8 @@ if(isset($_POST['name'])) {
 					</form>
 				</div>
 				<div class="col-md-6">
-					<img src="images/giaychungnhan.jpg" style="height: 600px; width: 100%">
+					<img src="images/giaychungnhan.jpg" style="height: 440px; width: 400px">
+					<div style="margin-top: 10px;">hình ảnh bằng dộc quyền sáng chế</div>
 				</div>
 			</div>
 

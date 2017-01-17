@@ -23,11 +23,11 @@
 .quytrinh5 { position:absolute; margin-top:-285px; margin-left:680px;}
 .quytrinh6 {text-align:center;}
 
-.qttext1 { width:300px; font-size:12px; position:absolute; margin-top:-440px; margin-left:620px;}
-.qttext2 { width:300px; font-size:12px; position:absolute; margin-top:-300px; margin-left:320px;}
-.qttext3 { width:300px; font-size:12px; position:absolute; margin-top:-210px; margin-left:550px; text-align:right}
-.qttext4 { width:300px; font-size:12px; position:absolute; margin-top:-150px; margin-left:200px; text-align:right}
-.qttext5 { position:absolute; margin-top:-265px; margin-left:780px;  width:300px; font-size:12px;}
+.qttext1 { width:300px; font-size:15px; position:absolute; margin-top:-440px; margin-left:620px;}
+.qttext2 { width:300px; font-size:15px; position:absolute; margin-top:-300px; margin-left:320px;}
+.qttext3 { width:300px; font-size:15px; position:absolute; margin-top:-210px; margin-left:550px; text-align:right}
+.qttext4 { width:300px; font-size:15px; position:absolute; margin-top:-150px; margin-left:200px; text-align:right}
+.qttext5 { position:absolute; margin-top:-265px; margin-left:780px;  width:300px; font-size:15px;}
 
 .getleads {
   }
